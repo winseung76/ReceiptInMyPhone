@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "329216625082",
+    "firebase_url": "https://rimp-55998.firebaseio.com",
+    "project_id": "rimp-55998",
+    "storage_bucket": "rimp-55998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329216625082:android:7202486c0b5c81a2",
+        "android_client_info": {
+          "package_name": "com.bukcoja.seung.receipt_inmyhand"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329216625082-8bbmj3oe821clb176p5hnqt8lf3ieggu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPW2etINKyS547njBZ1Dw3xAZkJcLeIA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "329216625082-8bbmj3oe821clb176p5hnqt8lf3ieggu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

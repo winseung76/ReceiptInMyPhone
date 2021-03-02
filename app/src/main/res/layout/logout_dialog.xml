@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right"
+    android:paddingTop="50dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="아니요"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/buttonlayout4"/>
+
+    <TextView
+        android:id="@+id/yes"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="예"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/buttonlayout3"/>
+
+
+
+</LinearLayout>

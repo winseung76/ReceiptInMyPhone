@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:backgroundTint="@android:color/transparent">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_marginRight="-20dp"
+        android:layout_marginTop="-20dp"
+        android:id="@+id/frmOk">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@android:color/transparent"
+            android:backgroundTint="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:text="Ok"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:layout_gravity="left"
+            android:layout_margin="10dp"
+            android:paddingLeft="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000000"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:text=" 님의 적립현황 "
+            android:drawableRight="@drawable/coins"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재 가용 포인트는 "
+                android:textSize="13dp"
+                android:textColor="#5D5D5D"/>
+            <TextView
+                android:id="@+id/usable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#5D5D5D"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" P 입니다."
+                android:textSize="13dp"
+                android:textColor="#5D5D5D"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.6">
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id='@+id/circularBar'
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_centerHorizontal="true"
+                app:cpb_background_progressbar_color="#FFCDD2"
+                app:cpb_background_progressbar_width="23dp"
+                app:cpb_progressbar_color="@color/colorPrimary"
+                tools:targetApi="11"
+                app:cpb_progressbar_width="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Point is"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textSize="35dp"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="P"
+                    android:layout_gravity="bottom"/>
+            </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="자세히"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"
+                    android:minHeight="30dp"
+                    android:background="@drawable/btn_layout"/>-->
+
+            </LinearLayout>
+        <!--<View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />-->
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="5dp">
+                <RadioButton
+                    android:id="@+id/radioall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="모두"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    android:theme="@style/CustomRadioButton" />
+                <RadioButton
+                    android:id="@+id/radiosave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="적립"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    android:theme="@style/CustomRadioButton" />
+                <RadioButton
+                    android:id="@+id/radiouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="차감"
+                    android:textSize="13dp"
+                    android:textColor="#000000"
+                    android:theme="@style/CustomRadioButton" />
+            </RadioGroup>
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더보기 "
+            android:textSize="13dp"
+            android:drawableRight="@drawable/right_arrow3"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="right"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/point_saving_layout"
+            tools:context=".View.ItemFragment"
+            tools:listitem="@layout/pointsavingitem" >
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

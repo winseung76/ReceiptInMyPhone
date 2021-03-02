@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- 툴바, 추가된 소스 -->
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:background="@drawable/linear_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="56dp">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_gravity="bottom|center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:fabSize="mini"
+            android:src="@drawable/ic_action_plus"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_nfc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:backgroundTint="#ffffff"
+            android:visibility="invisible"
+            android:layout_marginBottom="80dp"
+            tools:ignore="VectorDrawableCompat"
+            app:fabSize="normal"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:maxImageSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/nfc_icon"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:visibility="invisible"
+            app:backgroundTint="#ffffff"
+            app:fabSize="normal"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:maxImageSize="30dp"
+            android:layout_marginBottom="150dp"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_gravity="bottom|center"
+            android:layout_centerHorizontal="true"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/camera_icon"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:visibility="invisible"
+            app:backgroundTint="#ffffff"
+            app:fabSize="normal"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            app:maxImageSize="30dp"
+            android:layout_marginBottom="220dp"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_gravity="bottom|center"
+            android:layout_centerHorizontal="true"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/album_icon"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#EAEAEA"/>
+
+            <com.roughike.bottombar.BottomBar
+                android:id="@+id/bottombar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#ffffff"
+                app:bb_showShadow="true"
+                app:bb_tabXmlResource="@xml/bottombar_tabs"
+                android:elevation="5dp"
+                app:bb_titleTextAppearance="@style/BB_BottomBarItem_TitleStyle">
+            </com.roughike.bottombar.BottomBar>
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

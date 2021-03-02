@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item android:title="나의 영수증">
+        <menu>
+            <item
+                android:id="@+id/nav_my_receipt"
+                android:icon="@drawable/person"
+                android:title="나의 영수증" />
+        </menu>
+    </item>
+    <item android:title="그룹 영수증"
+        android:id="@+id/groups">
+        <menu android:id="@+id/group_menu">
+            <item
+                android:id="@+id/nav_group_receipt"
+                android:icon="@drawable/ic_action_plus2"
+                android:title="그룹 추가" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <tabs>
+        <tab
+            id="@+id/tab_list"
+            title="나의 영수증"
+            icon="@drawable/ic_action_receipt"
+            activeColor="#e84c3d"/>
+        <tab
+            id="@+id/tab_chart"
+            title="소비 차트"
+            icon="@drawable/ic_action_chart"
+            activeColor="#e84c3d"/>
+        <tab
+            id="@+id/tab_add" />
+        <tab
+            id="@+id/tab_mypoint"
+            title="나의 포인트"
+            icon="@drawable/ic_action_point"
+            activeColor="#e84c3d"/>
+        <tab
+            id="@+id/tab_home"
+            title="RIMP 결정"
+            icon="@drawable/ic_action_rcmd"
+            activeColor="#e84c3d"/>
+    </tabs>
+</PreferenceScreen>

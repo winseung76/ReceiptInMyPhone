@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andorid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:paddingLeft="5dp"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/color"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/ctgname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textSize="15dp"/>
+    
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/ctg_bar"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_height="20dp">
+        </com.github.mikephil.charting.charts.HorizontalBarChart>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:text="원"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_arrow2"
+            android:layout_gravity="center"
+            android:background="#00000000"/>
+    </LinearLayout>
+
+</LinearLayout>
+<View
+android:layout_width="match_parent"
+android:layout_height="0.1dp"
+android:background="#5D5D5D"/>
+</LinearLayout>
